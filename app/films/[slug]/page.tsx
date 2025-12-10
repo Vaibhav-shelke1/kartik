@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, use } from "react"
-import { filmsData } from "@/components/constants/shotStories"
+import { filmsData } from "../../../constants/shotStories"
 
 interface FilmDetails {
   slug: string
