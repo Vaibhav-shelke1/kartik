@@ -1,5 +1,12 @@
 
+export const heroData ={
+  bgImageUrl:"/cinematic-film-background-with-warm-lighting.jpg",
+  title:"Kartik Hajbe",
+  subtitle:"Visual Storyteller",
+  roles:"Filmmaker · Cinematographer · Editor · Photographer",
+  roles2:"Visual Storyteller · Creative Director · Indie Filmmaker"
 
+}
 export const aboutData ={
     heading:"Creative Storyteller",
     p1:"I'm a fresher filmmaker and cinematographer passionate about capturing compelling visual narratives. With a keen eye for composition and an understanding of cinematic language, I bring stories to life through carefully crafted frames and purposeful editing.",

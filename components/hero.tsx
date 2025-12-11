@@ -1,5 +1,6 @@
 "use client"
 
+import { heroData } from "@/constants/data"
 import { useEffect, useState } from "react"
 
 export default function Hero() {
@@ -14,7 +15,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/cinematic-film-background-with-warm-lighting.jpg"
+          src={heroData.bgImageUrl}
           alt="Hero background"
           className="w-full h-full object-cover blur-in"
         />
@@ -31,8 +32,8 @@ export default function Hero() {
             fontFamily: "var(--font-roboto-condensed), 'Roboto Condensed', sans-serif",
           }}
         >
-          Visual Storyteller
-        </p>
+          {heroData.subtitle}
+          </p>
 
         <h1
           className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-balance mb-4 fade-in-down uppercase"
@@ -46,7 +47,7 @@ export default function Hero() {
             fontStretch: "condensed",
           }}
         >
-          Kartik Hajbe
+         {heroData.title}
         </h1>
 
         <p
@@ -57,7 +58,7 @@ export default function Hero() {
             fontFamily: "var(--font-roboto-condensed), 'Roboto Condensed', sans-serif",
           }}
         >
-          Filmmaker · Cinematographer · Editor · Photographer
+         {heroData.roles}
         </p>
 
         <div
@@ -68,7 +69,7 @@ export default function Hero() {
             fontFamily: "var(--font-roboto-condensed), 'Roboto Condensed', sans-serif",
           }}
         >
-          <p>Visual Storyteller · Creative Director · Indie Filmmaker</p>
+          <p>{heroData.roles2}</p>
           {/* <p className="text-xs opacity-90">Crafting Cinema · Cinematic Narratives · Exceptional Visuals</p> */}
         </div>
 
